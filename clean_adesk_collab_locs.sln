@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clean_adesk_collab_locs", "clean_adesk_collab_locs\clean_adesk_collab_locs.csproj", "{D7EB62D0-AFE1-4E4E-B1B0-6D65D21ED48B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ClearACADCacheMSI", "ClearCollabMSI\ClearCollabMSI.vdproj", "{3928742C-1411-4BBA-AEA6-0632F559B89D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7EB62D0-AFE1-4E4E-B1B0-6D65D21ED48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EB62D0-AFE1-4E4E-B1B0-6D65D21ED48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EB62D0-AFE1-4E4E-B1B0-6D65D21ED48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EB62D0-AFE1-4E4E-B1B0-6D65D21ED48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3928742C-1411-4BBA-AEA6-0632F559B89D}.Debug|Any CPU.ActiveCfg = Debug
+		{3928742C-1411-4BBA-AEA6-0632F559B89D}.Debug|Any CPU.Build.0 = Debug
+		{3928742C-1411-4BBA-AEA6-0632F559B89D}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4A96A41-64AB-46DC-B60B-A11EE69CFF28}
+	EndGlobalSection
+EndGlobal
