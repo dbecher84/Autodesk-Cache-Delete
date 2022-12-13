@@ -30,8 +30,6 @@ namespace clean_adesk_collab_locs
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inputForm));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.buttonRevit = new System.Windows.Forms.Button();
             this.buttonP3d = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
@@ -42,38 +40,15 @@ namespace clean_adesk_collab_locs
             this.checkBoxCefCache = new System.Windows.Forms.CheckBox();
             this.checkBoxCollabCache = new System.Windows.Forms.CheckBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(71, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(317, 32);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Clear Revit Collaboration Cache?";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(71, 239);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(317, 32);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Clear Plant 3D Collaboration Cache?";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // buttonRevit
             // 
             this.buttonRevit.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonRevit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRevit.Location = new System.Drawing.Point(174, 165);
+            this.buttonRevit.Location = new System.Drawing.Point(174, 161);
             this.buttonRevit.Name = "buttonRevit";
             this.buttonRevit.Size = new System.Drawing.Size(97, 38);
             this.buttonRevit.TabIndex = 2;
@@ -85,7 +60,7 @@ namespace clean_adesk_collab_locs
             // 
             this.buttonP3d.BackColor = System.Drawing.SystemColors.ControlLight;
             this.buttonP3d.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonP3d.Location = new System.Drawing.Point(174, 292);
+            this.buttonP3d.Location = new System.Drawing.Point(174, 282);
             this.buttonP3d.Name = "buttonP3d";
             this.buttonP3d.Size = new System.Drawing.Size(97, 38);
             this.buttonP3d.TabIndex = 3;
@@ -110,7 +85,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2020.AutoSize = true;
             this.checkBox_2020.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2020.Location = new System.Drawing.Point(157, 102);
+            this.checkBox_2020.Location = new System.Drawing.Point(157, 98);
             this.checkBox_2020.Name = "checkBox_2020";
             this.checkBox_2020.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2020.TabIndex = 5;
@@ -122,7 +97,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2021.AutoSize = true;
             this.checkBox_2021.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2021.Location = new System.Drawing.Point(157, 128);
+            this.checkBox_2021.Location = new System.Drawing.Point(157, 124);
             this.checkBox_2021.Name = "checkBox_2021";
             this.checkBox_2021.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2021.TabIndex = 6;
@@ -134,7 +109,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2022.AutoSize = true;
             this.checkBox_2022.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2022.Location = new System.Drawing.Point(268, 102);
+            this.checkBox_2022.Location = new System.Drawing.Point(268, 98);
             this.checkBox_2022.Name = "checkBox_2022";
             this.checkBox_2022.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2022.TabIndex = 7;
@@ -146,7 +121,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2023.AutoSize = true;
             this.checkBox_2023.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2023.Location = new System.Drawing.Point(268, 128);
+            this.checkBox_2023.Location = new System.Drawing.Point(268, 124);
             this.checkBox_2023.Name = "checkBox_2023";
             this.checkBox_2023.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2023.TabIndex = 8;
@@ -160,7 +135,7 @@ namespace clean_adesk_collab_locs
             this.checkBoxCefCache.Checked = true;
             this.checkBoxCefCache.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxCefCache.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxCefCache.Location = new System.Drawing.Point(110, 68);
+            this.checkBoxCefCache.Location = new System.Drawing.Point(110, 64);
             this.checkBoxCefCache.Name = "checkBoxCefCache";
             this.checkBoxCefCache.Size = new System.Drawing.Size(84, 24);
             this.checkBoxCefCache.TabIndex = 9;
@@ -172,7 +147,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBoxCollabCache.AutoSize = true;
             this.checkBoxCollabCache.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxCollabCache.Location = new System.Drawing.Point(231, 68);
+            this.checkBoxCollabCache.Location = new System.Drawing.Point(231, 64);
             this.checkBoxCollabCache.Name = "checkBoxCollabCache";
             this.checkBoxCollabCache.Size = new System.Drawing.Size(142, 24);
             this.checkBoxCollabCache.TabIndex = 10;
@@ -193,12 +168,34 @@ namespace clean_adesk_collab_locs
             this.textBox3.Text = "Note: If experiencing errors with a Revit file try clearing only the CefCache. If" +
     " errors persist, Clear the Collaboration Cache.";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(98, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(275, 25);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Clear Revit Collaboration Cache?";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(79, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(302, 25);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Clear Plant 3D Collaboration Cache?";
+            // 
             // inputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(467, 410);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.checkBoxCollabCache);
             this.Controls.Add(this.checkBoxCefCache);
@@ -209,8 +206,6 @@ namespace clean_adesk_collab_locs
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonP3d);
             this.Controls.Add(this.buttonRevit);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -224,9 +219,6 @@ namespace clean_adesk_collab_locs
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button buttonRevit;
         private System.Windows.Forms.Button buttonP3d;
         private System.Windows.Forms.Button buttonClose;
@@ -237,6 +229,8 @@ namespace clean_adesk_collab_locs
         private System.Windows.Forms.CheckBox checkBoxCefCache;
         private System.Windows.Forms.CheckBox checkBoxCollabCache;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

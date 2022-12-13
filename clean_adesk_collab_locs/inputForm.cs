@@ -1,10 +1,13 @@
-﻿using System;
+﻿using project_selection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -15,7 +18,6 @@ namespace clean_adesk_collab_locs
 {
     public partial class inputForm : Form
     {
-        string userName = Environment.UserName;
 
         private void rCheckBoxRest()
         {
@@ -70,7 +72,7 @@ namespace clean_adesk_collab_locs
             ////testing path
             //string revitFilePath = @"C:\Users\" + userName + @"\Documents\testing\clean_adesk_app\Revit";
             ////rveit collab caceh location
-            string revitFilePath = @"C:\Users\" + userName + @"\AppData\Local\Autodesk\Revit";
+            string revitFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\Revit";
 
             List<string> revitYears = new List<string>();
             if (checkBox_2020.Checked)
@@ -178,21 +180,28 @@ namespace clean_adesk_collab_locs
             ////testing path
             //string plantFilePath = @"C:\Users\" + userName + @"\Documents\testing\clean_adesk_app\Plant 3D";
             ////plant collab cache location
-            string plantFilePath = @"C:\Users\" + userName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache";
+            //string plantFilePath = @"C:\Users\" + userName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache";
 
-            try
-            {
-                delete_files.DeleteFiles.Plantdelete(plantFilePath);
-                buttonP3d.Text = "Done";
-                buttonP3d.Update();
-                Thread.Sleep(2000);
-                buttonP3d.Text = "Clear";
-                buttonP3d.Update();
-            }
-            catch (Exception ex_cache)
-            {
-                MessageBox.Show(ex_cache.Message, "Error deleting Plant Cache files.");
-            }
+            //var directories = Directory.GetDirectories(plantFilePath);
+            //foreach (string direct in directories)
+            //{
+            //    MessageBox.Show(direct, "direcotries found");
+            //}
+            plantProjects pform = new plantProjects();
+            pform.ShowDialog();
+            //try
+            //{
+            //    delete_files.DeleteFiles.Plantdelete(plantFilePath);
+            //    buttonP3d.Text = "Done";
+            //    buttonP3d.Update();
+            //    Thread.Sleep(2000);
+            //    buttonP3d.Text = "Clear";
+            //    buttonP3d.Update();
+            //}
+            //catch (Exception ex_cache)
+            //{
+            //    MessageBox.Show(ex_cache.Message, "Error deleting Plant Cache files.");
+            //}
         }
 
         private void checkBox_2020_CheckedChanged(object sender, EventArgs e)

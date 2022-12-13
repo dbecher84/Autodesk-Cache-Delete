@@ -41,7 +41,7 @@ namespace delete_files
             foreach (var file in deleteFilePath.GetFiles("*", SearchOption.AllDirectories))
             {
                 file.Attributes &= ~FileAttributes.ReadOnly;
-                //file.Delete();
+                file.Delete();
             }
 
             DirectoryInfo[] pSubDirectories = deleteFilePath.GetDirectories();
@@ -49,6 +49,7 @@ namespace delete_files
             {
                 subDirectory.Delete(true);
             }
+            System.IO.Directory.Delete(inputFilePath, true);
         }
 
     }

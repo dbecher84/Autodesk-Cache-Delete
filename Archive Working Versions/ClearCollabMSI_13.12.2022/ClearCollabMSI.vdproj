@@ -100,14 +100,6 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
-                "Items"
-                {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
-                    {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
-                    }
-                }
             }
         }
     }
@@ -246,7 +238,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Clear ACAD Cache"
         "ProductCode" = "8:{D2D89AB8-A190-42EC-BAE7-F46B3C3B72EF}"
-        "PackageCode" = "8:{1A0456AF-E75C-44CB-BE35-A6EA5AB1B803}"
+        "PackageCode" = "8:{8069672C-3ED8-424F-B813-E9CE50227F7E}"
         "UpgradeCode" = "8:{B33B5BD0-B53D-4510-A717-30EF5C315B79}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -368,7 +360,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1DC770B8FBD046138F93EAA1A9FB5E27"
             {
-            "Name" = "8:Clear Autodesk Cache"
+            "Name" = "8:Clear ADesk Cache Locations"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
