@@ -44,6 +44,8 @@ namespace clean_adesk_collab_locs
             this.label2 = new System.Windows.Forms.Label();
             this.checkBox_2025 = new System.Windows.Forms.CheckBox();
             this.checkBox_2024 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonRevit
@@ -148,6 +150,8 @@ namespace clean_adesk_collab_locs
             // checkBoxCollabCache
             // 
             this.checkBoxCollabCache.AutoSize = true;
+            this.checkBoxCollabCache.Checked = true;
+            this.checkBoxCollabCache.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBoxCollabCache.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxCollabCache.Location = new System.Drawing.Point(231, 64);
             this.checkBoxCollabCache.Name = "checkBoxCollabCache";
@@ -174,21 +178,24 @@ namespace clean_adesk_collab_locs
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 30);
+            this.label1.Location = new System.Drawing.Point(103, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 25);
+            this.label1.Size = new System.Drawing.Size(270, 25);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Clear Revit Collaboration Cache?";
+            this.label1.Text = "Clear Revit Collaboration Cache.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(79, 242);
+            this.label2.Location = new System.Drawing.Point(86, 232);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(302, 25);
+            this.label2.Size = new System.Drawing.Size(297, 25);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Clear Plant 3D Collaboration Cache?";
+            this.label2.Text = "Clear Plant 3D Collaboration Cache.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox_2025
             // 
@@ -212,12 +219,42 @@ namespace clean_adesk_collab_locs
             this.checkBox_2024.Text = "2024";
             this.checkBox_2024.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(103, 257);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(261, 21);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = "(You will be prompted to select what projects to clear)";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(103, 43);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(261, 21);
+            this.textBox2.TabIndex = 17;
+            this.textBox2.Text = "(Clears all projects for the selected years)";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // inputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(467, 410);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.checkBox_2025);
             this.Controls.Add(this.checkBox_2024);
             this.Controls.Add(this.label2);
@@ -259,6 +296,8 @@ namespace clean_adesk_collab_locs
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox checkBox_2025;
         private System.Windows.Forms.CheckBox checkBox_2024;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

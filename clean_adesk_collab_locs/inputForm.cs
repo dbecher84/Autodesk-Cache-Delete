@@ -268,5 +268,10 @@ namespace clean_adesk_collab_locs
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
