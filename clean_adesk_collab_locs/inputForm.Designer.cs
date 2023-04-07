@@ -42,6 +42,8 @@ namespace clean_adesk_collab_locs
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.checkBox_2025 = new System.Windows.Forms.CheckBox();
+            this.checkBox_2024 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonRevit
@@ -85,7 +87,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2020.AutoSize = true;
             this.checkBox_2020.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2020.Location = new System.Drawing.Point(157, 98);
+            this.checkBox_2020.Location = new System.Drawing.Point(103, 96);
             this.checkBox_2020.Name = "checkBox_2020";
             this.checkBox_2020.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2020.TabIndex = 5;
@@ -97,7 +99,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2021.AutoSize = true;
             this.checkBox_2021.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2021.Location = new System.Drawing.Point(157, 124);
+            this.checkBox_2021.Location = new System.Drawing.Point(103, 122);
             this.checkBox_2021.Name = "checkBox_2021";
             this.checkBox_2021.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2021.TabIndex = 6;
@@ -109,7 +111,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2022.AutoSize = true;
             this.checkBox_2022.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2022.Location = new System.Drawing.Point(268, 98);
+            this.checkBox_2022.Location = new System.Drawing.Point(214, 96);
             this.checkBox_2022.Name = "checkBox_2022";
             this.checkBox_2022.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2022.TabIndex = 7;
@@ -121,7 +123,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2023.AutoSize = true;
             this.checkBox_2023.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2023.Location = new System.Drawing.Point(268, 124);
+            this.checkBox_2023.Location = new System.Drawing.Point(214, 122);
             this.checkBox_2023.Name = "checkBox_2023";
             this.checkBox_2023.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2023.TabIndex = 8;
@@ -188,12 +190,36 @@ namespace clean_adesk_collab_locs
             this.label2.TabIndex = 13;
             this.label2.Text = "Clear Plant 3D Collaboration Cache?";
             // 
+            // checkBox_2025
+            // 
+            this.checkBox_2025.AutoSize = true;
+            this.checkBox_2025.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_2025.Location = new System.Drawing.Point(315, 122);
+            this.checkBox_2025.Name = "checkBox_2025";
+            this.checkBox_2025.Size = new System.Drawing.Size(56, 24);
+            this.checkBox_2025.TabIndex = 15;
+            this.checkBox_2025.Text = "2025";
+            this.checkBox_2025.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_2024
+            // 
+            this.checkBox_2024.AutoSize = true;
+            this.checkBox_2024.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_2024.Location = new System.Drawing.Point(315, 96);
+            this.checkBox_2024.Name = "checkBox_2024";
+            this.checkBox_2024.Size = new System.Drawing.Size(56, 24);
+            this.checkBox_2024.TabIndex = 14;
+            this.checkBox_2024.Text = "2024";
+            this.checkBox_2024.UseVisualStyleBackColor = true;
+            // 
             // inputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(467, 410);
+            this.Controls.Add(this.checkBox_2025);
+            this.Controls.Add(this.checkBox_2024);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
@@ -231,6 +257,8 @@ namespace clean_adesk_collab_locs
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox_2025;
+        private System.Windows.Forms.CheckBox checkBox_2024;
     }
 }
 

@@ -29,6 +29,10 @@ namespace clean_adesk_collab_locs
             checkBox_2022.Update();
             checkBox_2023.Text = "2023";
             checkBox_2023.Update();
+            checkBox_2024.Text = "2024";
+            checkBox_2024.Update();
+            checkBox_2025.Text = "2025";
+            checkBox_2025.Update();
         }
 
         public inputForm()
@@ -71,7 +75,7 @@ namespace clean_adesk_collab_locs
         {
             ////testing path
             //string revitFilePath = @"C:\Users\" + userName + @"\Documents\testing\clean_adesk_app\Revit";
-            ////rveit collab caceh location
+            ////rveit collab cache location
             string revitFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\Revit";
 
             List<string> revitYears = new List<string>();
@@ -90,6 +94,14 @@ namespace clean_adesk_collab_locs
             if (checkBox_2023.Checked)
             {
                 revitYears.Add("2023");
+            }
+            if (checkBox_2024.Checked)
+            {
+                revitYears.Add("2024");
+            }
+            if (checkBox_2025.Checked)
+            {
+                revitYears.Add("2025");
             }
 
             if (revitYears.Count > 0)
@@ -136,6 +148,16 @@ namespace clean_adesk_collab_locs
                             {
                                 checkBox_2023.Text = year + " Cleared";
                                 checkBox_2023.Update();
+                            }
+                            if (year == "2024")
+                            {
+                                checkBox_2024.Text = year + " Cleared";
+                                checkBox_2024.Update();
+                            }
+                            if (year == "2025")
+                            {
+                                checkBox_2025.Text = year + " Cleared";
+                                checkBox_2025.Update();
                             }
                         }
                         catch (System.IO.DirectoryNotFoundException)
@@ -220,6 +242,14 @@ namespace clean_adesk_collab_locs
         }
 
         private void checkBox_2023_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void checkBox_2024_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void checkBox_2025_CheckedChanged(object sender, EventArgs e)
         {
 
         }
