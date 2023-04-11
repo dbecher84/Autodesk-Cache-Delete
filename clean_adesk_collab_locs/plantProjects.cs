@@ -54,6 +54,7 @@ namespace project_selection
 
         }
 
+
         //Delete projects
         private void button1_Click(object sender, EventArgs e)
         {
@@ -146,6 +147,32 @@ namespace project_selection
                 }
             }
             projectsdelete.Items.Clear();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            List<string> removed = new List<string>();
+
+            if (projectsdelete.SelectedItems.Count > 0)
+            {
+                foreach (string project in projectsdelete.SelectedItems)
+                {
+                    if (projectsfound.Items.Contains(project) == false)
+                    {
+                        projectsfound.Items.Add(project);
+                        removed.Add(project);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("No Projects were Selected.", "Results");
+            }
+
+            foreach (string item2 in removed)
+            {
+                projectsdelete.Items.Remove(item2);
+            }
         }
     }
 }
