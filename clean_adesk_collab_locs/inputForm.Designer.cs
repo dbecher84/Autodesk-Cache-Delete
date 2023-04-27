@@ -274,7 +274,7 @@ namespace clean_adesk_collab_locs
             this.MaximizeBox = false;
             this.Name = "inputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Clear Autodesk Collaboration Cache Locations";
+            this.Text = "IPS Clear Autodesk Cache Utility";
             this.Load += new System.EventHandler(this.inputForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

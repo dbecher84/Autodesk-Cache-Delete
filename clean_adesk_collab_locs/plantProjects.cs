@@ -18,15 +18,15 @@ namespace project_selection
 {
     public partial class plantProjects : Form
     {
-        public String plantFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
+        ////Don't use Environment.UserName as this can be different from the name used in the path
+        //public String plantFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
+
+        public String plantFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
 
         public plantProjects()
         {
             InitializeComponent();
-
-            //string plantFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
             
-
             var directories = Directory.GetDirectories(plantFilePath);
             if (directories.Length > 0)
             {

@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("clean_adesk_collab_locs")]
 [assembly: AssemblyDescription("Delete Revit and Plant Collaboration Cache Locations")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("IPS")]
 [assembly: AssemblyProduct("clean_adesk_collab_locs")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2023.1.0.0")]
-[assembly: AssemblyFileVersion("2023.1.0.0")]
+[assembly: AssemblyVersion("23.1.0.0")]
+[assembly: AssemblyFileVersion("23.1.0.0")]

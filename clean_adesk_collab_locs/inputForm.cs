@@ -75,8 +75,12 @@ namespace clean_adesk_collab_locs
         {
             ////testing path
             //string revitFilePath = @"C:\Users\" + userName + @"\Documents\testing\clean_adesk_app\Revit";
-            ////rveit collab cache location
-            string revitFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\Revit";
+            ////revit collab cache location
+            ////Don't use Environment.UserName as this can be different from the name used in the path
+            //string revitFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\Revit";
+
+            string revitFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\Revit";
+            //Environment.LocalAppData + @"\Autodesk\Revit"
 
             List<string> revitYears = new List<string>();
             if (checkBox_2020.Checked)
@@ -114,19 +118,22 @@ namespace clean_adesk_collab_locs
                         {
                             if (checkBoxCefCache.Checked == true)
                             {
-                                string completePath = revitFilePath + @"\AutoDesk Revit " + year + @"\CefCache";
-                                delete_files.DeleteFiles.Revitdelete(completePath);
+                                string cefPath = revitFilePath + @"\Autodesk Revit " + year + @"\CefCache";
+                                //MessageBox.Show(cefPath, "Path");
+                                delete_files.DeleteFiles.Revitdelete(cefPath);
                             }
                             if (checkBoxCollabCache.Checked == true)
                             {
-                                string completePath = revitFilePath + @"\AutoDesk Revit " + year + @"\CollaborationCache";
-                                delete_files.DeleteFiles.Revitdelete(completePath);
+                                string collabPath = revitFilePath + @"\Autodesk Revit " + year + @"\CollaborationCache";
+                                //MessageBox.Show(collabPath, "Path");
+                                delete_files.DeleteFiles.Revitdelete(collabPath);
                             }
                             if(checkBoxCefCache.Checked == false && checkBoxCollabCache.Checked == false)
                             {
                                 MessageBox.Show("Neither the CefCache or Collabaoration Cache were checked. Only the CefCache will be cleared", "Missing Information");
-                                string completePath = revitFilePath + @"\AutoDesk Revit " + year + @"\CefCache";
-                                delete_files.DeleteFiles.Revitdelete(completePath);
+                                string cefPath2 = revitFilePath + @"\Autodesk Revit " + year + @"\CefCache";
+                                //MessageBox.Show(cefPath2, "Path");
+                                delete_files.DeleteFiles.Revitdelete(cefPath2);
                             }
 
                             if (year == "2020")
