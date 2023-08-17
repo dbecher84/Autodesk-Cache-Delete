@@ -15,26 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_386A9F073CBC4FF1827A761C5010FA5F"
+        "MsmKey" = "8:_401A23E63B324BDF92024C53F1E72591"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C3BE52309B2C4E61B7A289BFC62A182F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E891200540D72A711BAB9E5CFE58DF36"
-        "OwnerKey" = "8:_386A9F073CBC4FF1827A761C5010FA5F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EFD9A1B88A534D97AB3FA4C168A42246"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_401A23E63B324BDF92024C53F1E72591"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_386A9F073CBC4FF1827A761C5010FA5F"
+        "OwnerKey" = "8:_401A23E63B324BDF92024C53F1E72591"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -63,7 +63,7 @@
         "InstallerBootstrapper" = "3:2"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:TRUE"
+            "Enabled" = "11:FALSE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
@@ -95,17 +95,17 @@
         "InstallerBootstrapper" = "3:2"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:TRUE"
+            "Enabled" = "11:FALSE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.8"
                     {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    "Name" = "8:Microsoft .NET Framework 4.8 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.8"
                     }
                 }
             }
@@ -138,6 +138,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C3BE52309B2C4E61B7A289BFC62A182F"
+            {
+            "SourcePath" = "8:Delete Folder.ico"
+            "TargetName" = "8:Delete Folder.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_C8223692FCA742E683EEE5E5FC970510"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E891200540D72A711BAB9E5CFE58DF36"
             {
             "AssemblyRegister" = "3:1"
@@ -165,28 +185,8 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:FALSE"
+            "Exclude" = "11:TRUE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EFD9A1B88A534D97AB3FA4C168A42246"
-            {
-            "SourcePath" = "8:Delete Folder.ico"
-            "TargetName" = "8:Delete Folder.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_C8223692FCA742E683EEE5E5FC970510"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -195,13 +195,13 @@
         }
         "Folder"
         {
-            "{1525181F-901A-416C-8A58-119130FE478E}:_3BF9DED49ADD4F8D9749BE8D79D3E969"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_18AE0FAD6EEC482B966792FAC7B11E0E"
             {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
+            "Name" = "8:#1921"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
+            "Property" = "8:StartMenuFolder"
                 "Folders"
                 {
                 }
@@ -219,7 +219,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_C8223692FCA742E683EEE5E5FC970510"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:C:\\Program Files\\[Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -245,15 +245,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:IPS Clear Autodesk Cache Utility"
-        "ProductCode" = "8:{47BCE296-31FA-4189-A5EA-6A48DA5AD35C}"
-        "PackageCode" = "8:{EC9478AB-8A25-456B-B4AD-A5E558EFCC4D}"
+        "ProductCode" = "8:{F403089A-BE1F-46F0-86A8-5B523A817F28}"
+        "PackageCode" = "8:{2960920C-08A7-45A2-A953-2933F92E06DF}"
         "UpgradeCode" = "8:{18F48ECF-ED1B-46C0-97E3-B0A3D83252CF}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:23.1.0"
+        "InstallAllUsers" = "11:TRUE"
+        "ProductVersion" = "8:23.1.2"
         "Manufacturer" = "8:IPS"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -263,7 +263,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_EFD9A1B88A534D97AB3FA4C168A42246"
+        "ARPPRODUCTICON" = "8:_C3BE52309B2C4E61B7A289BFC62A182F"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -366,7 +366,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1DC770B8FBD046138F93EAA1A9FB5E27"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_84D2841E52CE4A1D9DDAB3679506B79C"
             {
             "Name" = "8:IPS Clear Autodesk Cache Utility"
             "Arguments" = "8:"
@@ -374,10 +374,24 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_386A9F073CBC4FF1827A761C5010FA5F"
+            "Target" = "8:_401A23E63B324BDF92024C53F1E72591"
+            "Folder" = "8:_18AE0FAD6EEC482B966792FAC7B11E0E"
+            "WorkingFolder" = "8:_C8223692FCA742E683EEE5E5FC970510"
+            "Icon" = "8:_C3BE52309B2C4E61B7A289BFC62A182F"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0ED00E1DCA643F282057AB1F1DE1B01"
+            {
+            "Name" = "8:IPS Clear Autodesk Cache Utility"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_401A23E63B324BDF92024C53F1E72591"
             "Folder" = "8:_78E5F69AA7BF47EBAFDA62D634935583"
             "WorkingFolder" = "8:_C8223692FCA742E683EEE5E5FC970510"
-            "Icon" = "8:_EFD9A1B88A534D97AB3FA4C168A42246"
+            "Icon" = "8:_C3BE52309B2C4E61B7A289BFC62A182F"
             "Feature" = "8:"
             }
         }
@@ -779,9 +793,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_386A9F073CBC4FF1827A761C5010FA5F"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_401A23E63B324BDF92024C53F1E72591"
             {
-            "SourcePath" = "8:..\\clean_adesk_collab_locs\\obj\\Debug\\clean_adesk_collab_locs.exe"
+            "SourcePath" = "8:..\\clean_adesk_collab_locs\\obj\\Release\\clean_adesk_collab_locs.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C8223692FCA742E683EEE5E5FC970510"

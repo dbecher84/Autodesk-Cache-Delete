@@ -216,8 +216,21 @@ namespace clean_adesk_collab_locs
             //{
             //    MessageBox.Show(direct, "direcotries found");
             //}
-            plantProjects pform = new plantProjects();
-            pform.ShowDialog();
+
+            String plantFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
+            if (Directory.Exists(plantFilePath))
+            {
+                plantProjects pform = new plantProjects(plantFilePath);
+                pform.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("The Plant 3D Collaboration Cache does not exist.", "Plant Collaboration Cache");
+            }
+
+
+            //plantProjects pform = new plantProjects();
+            //pform.ShowDialog();
             //try
             //{
             //    delete_files.DeleteFiles.Plantdelete(plantFilePath);

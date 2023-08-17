@@ -21,13 +21,15 @@ namespace project_selection
         ////Don't use Environment.UserName as this can be different from the name used in the path
         //public String plantFilePath = @"C:\Users\" + Environment.UserName + @"\AppData\Local\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
 
-        public String plantFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
+        //public String plantFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\AutoCAD Plant 3D\CollaborationCache\";
+        public string plantPath { get; set; }
 
-        public plantProjects()
+        public plantProjects(string input_path)
         {
             InitializeComponent();
-            
-            var directories = Directory.GetDirectories(plantFilePath);
+
+            plantPath = input_path;
+            var directories = Directory.GetDirectories(plantPath);
             if (directories.Length > 0)
             {
                 foreach (string dPath in directories)
@@ -42,6 +44,8 @@ namespace project_selection
             {
                 projectsfound.Items.Add("No Projects Found");
             }
+
+
         }
 
         private void projectsfound_SelectedIndexChanged(object sender, EventArgs e)
@@ -67,7 +71,7 @@ namespace project_selection
                     //MessageBox.Show(projectSelected, "Path");
                     try
                     {
-                        string deletePath = plantFilePath + projectSelected;
+                        string deletePath = plantPath + projectSelected;
                         //MessageBox.Show(deletePath, "Path");
                         delete_files.DeleteFiles.Plantdelete(deletePath);
                         deletedItems.Add(projectSelected);
