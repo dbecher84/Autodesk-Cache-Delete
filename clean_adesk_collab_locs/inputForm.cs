@@ -293,5 +293,17 @@ namespace clean_adesk_collab_locs
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPAC_Click(object sender, EventArgs e)
+        {
+            string pacFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\Revit\PacCache";
+            paccache_clean.PacCleaning.PacClean(pacFilePath);
+        }
+     
     }
 }

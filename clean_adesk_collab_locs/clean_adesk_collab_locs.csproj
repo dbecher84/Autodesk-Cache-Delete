@@ -61,7 +61,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="deleteFiles.cs" />
+    <Compile Include="PacClean.cs" />
     <Compile Include="plantProjects.cs">
       <SubType>Form</SubType>
     </Compile>

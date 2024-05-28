@@ -12,15 +12,15 @@ namespace delete_files
     {
         public static void Revitdelete(string inputFilePath)
         {
-            DirectoryInfo deletetFilePath = new DirectoryInfo(inputFilePath);
+            DirectoryInfo deleteFilePath = new DirectoryInfo(inputFilePath);
 
-            FileInfo[] rFiles = deletetFilePath.GetFiles();
+            FileInfo[] rFiles = deleteFilePath.GetFiles();
             foreach (FileInfo file in rFiles)
             {
                 file.Delete();
             }
 
-            DirectoryInfo[] rSubDirectories = deletetFilePath.GetDirectories();
+            DirectoryInfo[] rSubDirectories = deleteFilePath.GetDirectories();
             foreach (DirectoryInfo subDirectory in rSubDirectories)
             {
                 subDirectory.Delete(true);
@@ -50,6 +50,16 @@ namespace delete_files
                 subDirectory.Delete(true);
             }
             System.IO.Directory.Delete(inputFilePath, true);
+        }
+
+        public static void Pacdelete(string inputFilePath)
+        {
+            DirectoryInfo pacDeleteFilePath = new DirectoryInfo(inputFilePath);
+            FileInfo[] rFiles = pacDeleteFilePath.GetFiles();
+            foreach (FileInfo file in rFiles)
+            {
+                file.Delete();
+            }
         }
 
     }
