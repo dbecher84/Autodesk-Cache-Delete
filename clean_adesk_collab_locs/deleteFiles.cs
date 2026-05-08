@@ -8,6 +8,11 @@ using System.Windows.Forms;
 
 namespace delete_files
 {
+    //Code to delete the files and folder found in the Revit, Plant, and PacCache folders.
+    //The path to the folders is passed in as a string variable from the main form.
+    //The Revit paths need to be build base on the Revit version and the user name.
+    //The Plant paths need to be build base on the projects selected for deletion and the user name.
+
     class DeleteFiles
     {
         public static void Revitdelete(string inputFilePath)

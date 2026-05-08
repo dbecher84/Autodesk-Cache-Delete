@@ -1,18 +1,19 @@
 ﻿using project_selection;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+//using System.ComponentModel;
+//using System.Data;
+//using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Net.NetworkInformation;
-using System.Text;
+//using System.Linq;
+//using System.Linq.Expressions;
+//using System.Net.NetworkInformation;
+//using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+//using System.Diagnostics;
 
 namespace clean_adesk_collab_locs
 {
@@ -21,8 +22,6 @@ namespace clean_adesk_collab_locs
 
         private void rCheckBoxRest()
         {
-            checkBox_2020.Text = "2020";
-            checkBox_2020.Update();
             checkBox_2021.Text = "2021";
             checkBox_2021.Update();
             checkBox_2022.Text = "2022";
@@ -33,6 +32,12 @@ namespace clean_adesk_collab_locs
             checkBox_2024.Update();
             checkBox_2025.Text = "2025";
             checkBox_2025.Update();
+            checkBox_2026.Text = "2026";
+            checkBox_2026.Update();
+            checkBox_2027.Text = "2027";
+            checkBox_2027.Update();
+            checkBox_2028.Text = "2028";
+            checkBox_2028.Update();
         }
 
         public inputForm()
@@ -40,27 +45,16 @@ namespace clean_adesk_collab_locs
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Revit text box
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        /// <summary>
-        /// Plant Text box
-        /// </summary>
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        /// <summary>
-        /// /Close Button
-        /// </summary>
         private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -68,9 +62,6 @@ namespace clean_adesk_collab_locs
 
         string revitButtonsuccess = null;
 
-        /// <summary>
-        /// Revit Collab Button
-        /// </summary>
         private void buttonRevit_Click(object sender, EventArgs e)
         {
             ////testing path
@@ -83,10 +74,6 @@ namespace clean_adesk_collab_locs
             //Environment.LocalAppData + @"\Autodesk\Revit"
 
             List<string> revitYears = new List<string>();
-            if (checkBox_2020.Checked)
-            {
-                revitYears.Add("2020");
-            }
             if (checkBox_2021.Checked)
             {
                 revitYears.Add("2021");
@@ -106,6 +93,18 @@ namespace clean_adesk_collab_locs
             if (checkBox_2025.Checked)
             {
                 revitYears.Add("2025");
+            }
+            if (checkBox_2026.Checked)
+            {
+                revitYears.Add("2026");
+            }
+            if (checkBox_2027.Checked)
+            {
+                revitYears.Add("2027");
+            }
+            if (checkBox_2028.Checked)
+            {
+                revitYears.Add("2028");
             }
 
             if (revitYears.Count > 0)
@@ -136,11 +135,6 @@ namespace clean_adesk_collab_locs
                                 delete_files.DeleteFiles.Revitdelete(cefPath2);
                             }
 
-                            if (year == "2020")
-                            {
-                                checkBox_2020.Text = year + " Cleared";
-                                checkBox_2020.Update();
-                            }
                             if (year == "2021")
                             {
                                 checkBox_2021.Text = year + " Cleared";
@@ -165,6 +159,21 @@ namespace clean_adesk_collab_locs
                             {
                                 checkBox_2025.Text = year + " Cleared";
                                 checkBox_2025.Update();
+                            }
+                            if (year == "2026")
+                            {
+                                checkBox_2026.Text = year + " Cleared";
+                                checkBox_2026.Update();
+                            }
+                            if (year == "2027")
+                            {
+                                checkBox_2027.Text = year + " Cleared";
+                                checkBox_2027.Update();
+                            }
+                            if (year == "2028")
+                            {
+                                checkBox_2028.Text = year + " Cleared";
+                                checkBox_2028.Update();
                             }
                         }
                         catch (System.IO.DirectoryNotFoundException)
@@ -228,25 +237,9 @@ namespace clean_adesk_collab_locs
                 MessageBox.Show("The Plant 3D Collaboration Cache does not exist.", "Plant Collaboration Cache");
             }
 
-
-            //plantProjects pform = new plantProjects();
-            //pform.ShowDialog();
-            //try
-            //{
-            //    delete_files.DeleteFiles.Plantdelete(plantFilePath);
-            //    buttonP3d.Text = "Done";
-            //    buttonP3d.Update();
-            //    Thread.Sleep(2000);
-            //    buttonP3d.Text = "Clear";
-            //    buttonP3d.Update();
-            //}
-            //catch (Exception ex_cache)
-            //{
-            //    MessageBox.Show(ex_cache.Message, "Error deleting Plant Cache files.");
-            //}
         }
 
-        private void checkBox_2020_CheckedChanged(object sender, EventArgs e)
+        private void checkBox_2026_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -270,6 +263,15 @@ namespace clean_adesk_collab_locs
 
         }
         private void checkBox_2025_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void checkBox_2027_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_2028_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -304,6 +306,10 @@ namespace clean_adesk_collab_locs
             string pacFilePath = Environment.GetEnvironmentVariable("LocalAppData") + @"\Autodesk\Revit\PacCache";
             paccache_clean.PacCleaning.PacClean(pacFilePath);
         }
-     
+
+        private void buttonDC_Click(object sender, EventArgs e)
+        {
+            dc_runreset.DCReset.dcReset();
+        }
     }
 }

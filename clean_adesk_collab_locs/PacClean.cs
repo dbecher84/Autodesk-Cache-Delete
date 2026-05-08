@@ -11,6 +11,8 @@ using System.Windows.Forms;
 
 namespace paccache_clean
 {
+    //code to stop the Revit Accelerator process, delete the PacCache folder, and restart the Revit Accelerator process.
+
     class PacCleaning
     {
         static string accelProcFound = "no";

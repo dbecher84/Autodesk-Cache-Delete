@@ -33,7 +33,7 @@ namespace clean_adesk_collab_locs
             this.buttonRevit = new System.Windows.Forms.Button();
             this.buttonP3d = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
-            this.checkBox_2020 = new System.Windows.Forms.CheckBox();
+            this.checkBox_2026 = new System.Windows.Forms.CheckBox();
             this.checkBox_2021 = new System.Windows.Forms.CheckBox();
             this.checkBox_2022 = new System.Windows.Forms.CheckBox();
             this.checkBox_2023 = new System.Windows.Forms.CheckBox();
@@ -47,11 +47,17 @@ namespace clean_adesk_collab_locs
             this.buttonPAC = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.checkBox_2027 = new System.Windows.Forms.CheckBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox_2028 = new System.Windows.Forms.CheckBox();
+            this.buttonDC = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonRevit
             // 
-            this.buttonRevit.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonRevit.BackColor = System.Drawing.Color.Tomato;
             this.buttonRevit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRevit.Location = new System.Drawing.Point(179, 152);
             this.buttonRevit.Name = "buttonRevit";
@@ -63,9 +69,9 @@ namespace clean_adesk_collab_locs
             // 
             // buttonP3d
             // 
-            this.buttonP3d.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonP3d.BackColor = System.Drawing.Color.Tomato;
             this.buttonP3d.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonP3d.Location = new System.Drawing.Point(179, 360);
+            this.buttonP3d.Location = new System.Drawing.Point(179, 379);
             this.buttonP3d.Name = "buttonP3d";
             this.buttonP3d.Size = new System.Drawing.Size(97, 38);
             this.buttonP3d.TabIndex = 3;
@@ -75,10 +81,11 @@ namespace clean_adesk_collab_locs
             // 
             // buttonClose
             // 
-            this.buttonClose.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonClose.BackColor = System.Drawing.Color.LightGray;
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonClose.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClose.Location = new System.Drawing.Point(358, 403);
+            this.buttonClose.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonClose.Location = new System.Drawing.Point(345, 528);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(97, 38);
             this.buttonClose.TabIndex = 4;
@@ -86,23 +93,23 @@ namespace clean_adesk_collab_locs
             this.buttonClose.UseVisualStyleBackColor = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
-            // checkBox_2020
+            // checkBox_2026
             // 
-            this.checkBox_2020.AutoSize = true;
-            this.checkBox_2020.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2020.Location = new System.Drawing.Point(96, 96);
-            this.checkBox_2020.Name = "checkBox_2020";
-            this.checkBox_2020.Size = new System.Drawing.Size(56, 24);
-            this.checkBox_2020.TabIndex = 5;
-            this.checkBox_2020.Text = "2020";
-            this.checkBox_2020.UseVisualStyleBackColor = true;
-            this.checkBox_2020.CheckedChanged += new System.EventHandler(this.checkBox_2020_CheckedChanged);
+            this.checkBox_2026.AutoSize = true;
+            this.checkBox_2026.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_2026.Location = new System.Drawing.Point(268, 94);
+            this.checkBox_2026.Name = "checkBox_2026";
+            this.checkBox_2026.Size = new System.Drawing.Size(56, 24);
+            this.checkBox_2026.TabIndex = 5;
+            this.checkBox_2026.Text = "2026";
+            this.checkBox_2026.UseVisualStyleBackColor = true;
+            this.checkBox_2026.CheckedChanged += new System.EventHandler(this.checkBox_2026_CheckedChanged);
             // 
             // checkBox_2021
             // 
             this.checkBox_2021.AutoSize = true;
             this.checkBox_2021.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2021.Location = new System.Drawing.Point(96, 122);
+            this.checkBox_2021.Location = new System.Drawing.Point(363, 122);
             this.checkBox_2021.Name = "checkBox_2021";
             this.checkBox_2021.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2021.TabIndex = 6;
@@ -114,7 +121,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2022.AutoSize = true;
             this.checkBox_2022.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2022.Location = new System.Drawing.Point(207, 96);
+            this.checkBox_2022.Location = new System.Drawing.Point(268, 122);
             this.checkBox_2022.Name = "checkBox_2022";
             this.checkBox_2022.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2022.TabIndex = 7;
@@ -126,7 +133,7 @@ namespace clean_adesk_collab_locs
             // 
             this.checkBox_2023.AutoSize = true;
             this.checkBox_2023.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2023.Location = new System.Drawing.Point(207, 122);
+            this.checkBox_2023.Location = new System.Drawing.Point(167, 122);
             this.checkBox_2023.Name = "checkBox_2023";
             this.checkBox_2023.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2023.TabIndex = 8;
@@ -188,19 +195,20 @@ namespace clean_adesk_collab_locs
             // checkBox_2025
             // 
             this.checkBox_2025.AutoSize = true;
+            this.checkBox_2025.BackColor = System.Drawing.Color.DarkGray;
             this.checkBox_2025.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2025.Location = new System.Drawing.Point(308, 122);
+            this.checkBox_2025.Location = new System.Drawing.Point(363, 94);
             this.checkBox_2025.Name = "checkBox_2025";
             this.checkBox_2025.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2025.TabIndex = 15;
             this.checkBox_2025.Text = "2025";
-            this.checkBox_2025.UseVisualStyleBackColor = true;
+            this.checkBox_2025.UseVisualStyleBackColor = false;
             // 
             // checkBox_2024
             // 
             this.checkBox_2024.AutoSize = true;
             this.checkBox_2024.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox_2024.Location = new System.Drawing.Point(308, 96);
+            this.checkBox_2024.Location = new System.Drawing.Point(59, 122);
             this.checkBox_2024.Name = "checkBox_2024";
             this.checkBox_2024.Size = new System.Drawing.Size(56, 24);
             this.checkBox_2024.TabIndex = 14;
@@ -209,7 +217,7 @@ namespace clean_adesk_collab_locs
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(96, 43);
@@ -223,9 +231,10 @@ namespace clean_adesk_collab_locs
             // 
             // buttonPAC
             // 
-            this.buttonPAC.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonPAC.BackColor = System.Drawing.Color.Tomato;
             this.buttonPAC.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonPAC.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPAC.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonPAC.Location = new System.Drawing.Point(179, 262);
             this.buttonPAC.Name = "buttonPAC";
             this.buttonPAC.Size = new System.Drawing.Size(97, 38);
@@ -248,7 +257,7 @@ namespace clean_adesk_collab_locs
             // 
             // textBox4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBox4.BackColor = System.Drawing.Color.DarkGray;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(103, 237);
@@ -260,12 +269,93 @@ namespace clean_adesk_collab_locs
             this.textBox4.Text = "(Clears all files from the PacCache location)";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // checkBox_2027
+            // 
+            this.checkBox_2027.AutoSize = true;
+            this.checkBox_2027.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_2027.Location = new System.Drawing.Point(167, 94);
+            this.checkBox_2027.Name = "checkBox_2027";
+            this.checkBox_2027.Size = new System.Drawing.Size(56, 24);
+            this.checkBox_2027.TabIndex = 22;
+            this.checkBox_2027.Text = "2027";
+            this.checkBox_2027.UseVisualStyleBackColor = true;
+            this.checkBox_2027.CheckedChanged += new System.EventHandler(this.checkBox_2027_CheckedChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(96, 352);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(261, 21);
+            this.textBox1.TabIndex = 23;
+            this.textBox1.Text = "(Select Clear to choose the projects that will be deleted)";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // checkBox_2028
+            // 
+            this.checkBox_2028.AutoSize = true;
+            this.checkBox_2028.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_2028.Location = new System.Drawing.Point(59, 94);
+            this.checkBox_2028.Name = "checkBox_2028";
+            this.checkBox_2028.Size = new System.Drawing.Size(56, 24);
+            this.checkBox_2028.TabIndex = 24;
+            this.checkBox_2028.Text = "2028";
+            this.checkBox_2028.UseVisualStyleBackColor = true;
+            this.checkBox_2028.CheckedChanged += new System.EventHandler(this.checkBox_2028_CheckedChanged);
+            // 
+            // buttonDC
+            // 
+            this.buttonDC.BackColor = System.Drawing.Color.Tomato;
+            this.buttonDC.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDC.Location = new System.Drawing.Point(179, 490);
+            this.buttonDC.Name = "buttonDC";
+            this.buttonDC.Size = new System.Drawing.Size(97, 38);
+            this.buttonDC.TabIndex = 25;
+            this.buttonDC.Text = "Run";
+            this.buttonDC.UseVisualStyleBackColor = false;
+            this.buttonDC.Click += new System.EventHandler(this.buttonDC_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(73, 437);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(330, 25);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Run the Desktop Connector Reset Utility";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(62, 463);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(347, 21);
+            this.textBox3.TabIndex = 27;
+            this.textBox3.Text = "(Any local edits that have not been sync\'d to the cloud will be lost)";
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // inputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(467, 453);
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.ClientSize = new System.Drawing.Size(467, 578);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonDC);
+            this.Controls.Add(this.checkBox_2028);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.checkBox_2027);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonPAC);
@@ -279,7 +369,7 @@ namespace clean_adesk_collab_locs
             this.Controls.Add(this.checkBox_2023);
             this.Controls.Add(this.checkBox_2022);
             this.Controls.Add(this.checkBox_2021);
-            this.Controls.Add(this.checkBox_2020);
+            this.Controls.Add(this.checkBox_2026);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonP3d);
             this.Controls.Add(this.buttonRevit);
@@ -299,7 +389,7 @@ namespace clean_adesk_collab_locs
         private System.Windows.Forms.Button buttonRevit;
         private System.Windows.Forms.Button buttonP3d;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.CheckBox checkBox_2020;
+        private System.Windows.Forms.CheckBox checkBox_2026;
         private System.Windows.Forms.CheckBox checkBox_2021;
         private System.Windows.Forms.CheckBox checkBox_2022;
         private System.Windows.Forms.CheckBox checkBox_2023;
@@ -313,6 +403,12 @@ namespace clean_adesk_collab_locs
         private System.Windows.Forms.Button buttonPAC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.CheckBox checkBox_2027;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBox_2028;
+        private System.Windows.Forms.Button buttonDC;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

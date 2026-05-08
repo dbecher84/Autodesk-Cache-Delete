@@ -25,8 +25,8 @@
     <MapFileExtensions>false</MapFileExtensions>
     <ProductName>IPS Clear Autodesk Cache Utility</ProductName>
     <PublisherName>IPS</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>23.0.1.2</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>26.1.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -86,6 +86,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dcReset.cs" />
     <Compile Include="deleteFiles.cs" />
     <Compile Include="PacClean.cs" />
     <Compile Include="plantProjects.cs">

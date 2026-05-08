@@ -45,6 +45,7 @@
             // 
             // projectsfound
             // 
+            this.projectsfound.BackColor = System.Drawing.Color.Gainsboro;
             this.projectsfound.FormattingEnabled = true;
             this.projectsfound.HorizontalScrollbar = true;
             this.projectsfound.Location = new System.Drawing.Point(19, 48);
@@ -56,6 +57,7 @@
             // 
             // projectsdelete
             // 
+            this.projectsdelete.BackColor = System.Drawing.Color.Gainsboro;
             this.projectsdelete.FormattingEnabled = true;
             this.projectsdelete.HorizontalScrollbar = true;
             this.projectsdelete.Location = new System.Drawing.Point(269, 48);
@@ -67,17 +69,19 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Tomato;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(481, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(149, 50);
             this.button1.TabIndex = 2;
             this.button1.Text = "Delete Projects";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.LightGray;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(481, 353);
@@ -85,59 +89,64 @@
             this.button2.Size = new System.Drawing.Size(149, 50);
             this.button2.TabIndex = 3;
             this.button2.Text = "Close";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 24);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(32, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 20);
+            this.label1.Size = new System.Drawing.Size(181, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "Plant 3D Projects on PC.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(276, 24);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(265, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 20);
+            this.label2.Size = new System.Drawing.Size(200, 18);
             this.label2.TabIndex = 5;
             this.label2.Text = "Plant 3D Projects to Delete.";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LightGray;
             this.button3.Location = new System.Drawing.Point(225, 166);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(38, 34);
             this.button3.TabIndex = 6;
             this.button3.Text = "-->";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.LightGray;
             this.button4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(17, 21);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(149, 50);
             this.button4.TabIndex = 7;
             this.button4.Text = "Select All";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.LightGray;
             this.button5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(17, 85);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(149, 50);
             this.button5.TabIndex = 8;
             this.button5.Text = "Remove All";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // groupBox1
@@ -154,18 +163,20 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.LightGray;
             this.button6.Location = new System.Drawing.Point(225, 213);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(38, 34);
             this.button6.TabIndex = 10;
             this.button6.Text = "<--";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // plantProjects
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(662, 443);
             this.Controls.Add(this.button6);
