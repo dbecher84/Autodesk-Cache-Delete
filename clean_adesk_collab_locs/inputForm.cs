@@ -118,8 +118,16 @@ namespace clean_adesk_collab_locs
                             if (checkBoxCefCache.Checked == true)
                             {
                                 string cefPath = revitFilePath + @"\Autodesk Revit " + year + @"\CefCache";
+                                string webBrowserControl = revitFilePath + @"\Autodesk Revit " + year + @"\WebBrowserControl";
                                 //MessageBox.Show(cefPath, "Path");
-                                delete_files.DeleteFiles.Revitdelete(cefPath);
+                                if (int.Parse(year) > 2025)
+                                {
+                                    delete_files.DeleteFiles.Revitdelete(webBrowserControl);
+                                }
+                                else
+                                {
+                                    delete_files.DeleteFiles.Revitdelete(cefPath);
+                                }
                             }
                             if (checkBoxCollabCache.Checked == true)
                             {
@@ -131,10 +139,17 @@ namespace clean_adesk_collab_locs
                             {
                                 MessageBox.Show("Neither the CefCache or Collabaoration Cache were checked. Only the CefCache will be cleared", "Missing Information");
                                 string cefPath2 = revitFilePath + @"\Autodesk Revit " + year + @"\CefCache";
+                                string webBrowserControl2 = revitFilePath + @"\Autodesk Revit " + year + @"\WebBrowserControl";
                                 //MessageBox.Show(cefPath2, "Path");
-                                delete_files.DeleteFiles.Revitdelete(cefPath2);
+                                if (int.Parse(year) > 2025)
+                                {
+                                    delete_files.DeleteFiles.Revitdelete(webBrowserControl2);
+                                }
+                                else
+                                {
+                                    delete_files.DeleteFiles.Revitdelete(cefPath2);
+                                }
                             }
-
                             if (year == "2021")
                             {
                                 checkBox_2021.Text = year + " Cleared";

@@ -49,6 +49,7 @@ namespace dc_runreset
                         {
                             resetProcess.WaitForExit();
                         }
+                        MessageBox.Show("Reset Complete. \nYou will need to resync any active projects.", "Results");
                     }
                     catch (Exception ex)
                     {
